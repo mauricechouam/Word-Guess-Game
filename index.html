@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    
+    <title>Word-Guess-Game</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="assets/css/reset.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Faster+One" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Press+Start+2P" rel="stylesheet">
+    <link rel="icon" href="https://www.bitdegree.org/tutorials/wp-content/uploads/2018/08/what-is-a-web-developer.jpg" >
+    <link href="https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap" rel="stylesheet">
+    
+</head>
+
+    <body>
+    
+      
+            <div class="container">
+
+                <!--Changing Image based on correct answers-->
+                <h2>Press Any Key To Guess This Word!</h2>
+                <div>
+                    <img id="image" src="./assets/image/200.webp" width="30%" height="200">
+                </div>
+
+                <!--Current Word Container-->
+                <div>
+                    <h3 id="currentword">_ _ _ _ _ _</h3>
+                </div>
+                <div id="scoreboard">
+                    <!--Guesses left Container-->
+                    <div class="menu">
+                        <h3>GUESSES LEFT:
+                            <span id="guesscpt"></span>
+                        </h3>
+                    </div>
+
+                    <!--Wins counter Container-->
+                    <div class="menu">
+                        <h3>WINS :
+                            <span id="wincpt"></span>
+                        </h3>
+                    </div>
+                    <!--Loss counter Container-->
+                    <div class="menu">
+                        <h3>LOSSES:
+                            <span id="lostcpt"></span>
+                        </h3>
+                    </div>
+
+                    <!--Wrong guesses container-->
+                    <div class="menu">
+                        <h3>WRONG LETTERS LIST:
+                            <span id="playerguesses"></span>
+                        </h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--AUDIO FILES-->
+        <div>
+            <!--responsive-->>
+            <audio id="resp">
+                <source src="./assets/audio/resp.mp3." type="audio/mp3">
+            </audio>
+            <!--software-->
+            <audio id="soft">
+                <source src="./assets/audio/soft.mp3" type="audio/mp3">
+            </audio>
+            <!--padding-->
+            <audio id="padd">
+                <source src="./assets/audio/padd.mp3" type="audio/mp3">
+            </audio>
+            <!--fullstack-->
+            <audio id="full">
+                <source src="./assets/audio/full.mp3" type="audio/mp3">
+            </audio>
+            <!--article-->
+            <audio id="arti">
+                <source src="./assets/audio/arti.mp3" type="audio/mp3">
+            </audio>
+            <!--container-->
+            <audio id="cont">
+                <source src="./assets/audio/cont.mp3 type="audio/mp3">
+            </audio>
+            <!--bootstarp-->
+            <audio id="boot">
+                <source src="./assets/audio/boot.mp3" type="audio/mp3">
+            </audio>
+        </div>
+
+
+
+
+        <script src="assets/javascript/game.js"></script>
+
+    </body>
+
+</html>
