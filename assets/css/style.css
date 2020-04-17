@@ -8,7 +8,7 @@ body {
 h2 {
     font-family: 'Luckiest Guy', cursive;
     font-size: 40px;
-    padding-top: 30px;
+    padding-top: 20px;
     padding-bottom: 30px;
     color: rgb(25, 43, 43);
 }
@@ -32,9 +32,9 @@ span{
 .menu {
     padding: 10px;
     position: relative;
-    margin: 20px;
+    margin: 10px;
     font-family: 'Segoe UI';
-    font-size: 30px;
+    font-size: 25px;
 }
 
 
@@ -46,10 +46,10 @@ span{
 
 .container {
     background-color:rgb(207, 205, 200);
-    margin-top: 50px;
+    margin-top: 40px;
     margin-left: 20%;
     margin-right: 20%;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
     text-align: center;
     
     
