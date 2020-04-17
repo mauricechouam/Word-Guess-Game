@@ -1,5 +1,5 @@
 body {
-    background-image: url("../image/img.gif");
+    background-image: url("../image/test2.gif");
     background-repeat: round;
     width: 100%;
     font-family: 'Segoe UI';
@@ -24,6 +24,7 @@ span{
     height: 2px;
     width: 10px;
     background-color: white;
+    text-decoration: rgb(97, 96, 121);
      
 
 }
@@ -45,7 +46,7 @@ span{
 }
 
 .container {
-    background-color:rgb(207, 205, 200);
+    background-color:burlywood;
     margin-top: 40px;
     margin-left: 20%;
     margin-right: 20%;
@@ -53,14 +54,15 @@ span{
     text-align: center;
     
     
+    
 }
 
 #currentword {
-    font-size: 40px;
-    font-family: 'Luckiest Guy', cursive;
+    font-size: 30px;
+    font-family: 'Times New Roman', Times, serif;
     margin-bottom: 10px;
     margin-top: 10px;
-    color:red ;
+    color:black;
 }
 
 #scoreboard {
@@ -71,6 +73,8 @@ h3{
     color: #399479;
     font-family: 'Luckiest Guy', cursive;
     
-
 }
+
+
+
 

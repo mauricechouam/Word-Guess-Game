@@ -48,7 +48,7 @@ function song() {
         arti.pause();
         cont.pause();
         resp.play();
-        document.getElementById("image").src = "./assets/images/resp.gif";
+        document.getElementById("image").src = "./assets/image/resp.gif";
     }
     
     else if (randwd=== wordslist[1]) {
@@ -153,15 +153,20 @@ function verification() {
         song()
         reset()
         document.getElementById("wincpt").innerHTML = " " + wins; 
+        document.getElementById("message").innerHTML = " !!!! WELL DONE!!!!" 
     } else if (guessleft === 0) {
         losses++
         reset()
-        document.getElementById("image").src = "./assets/images/try-again.png"
-        document.getElementById("lostcpt").innerHTML = " " + losses;
+        document.getElementById("image").src = "./assets/images/try.gif"
+        document.getElementById("message").innerHTML = " !!!! TRY AGAIN !!!!" 
+        document.getElementById("lostcpt").innerHTML = "" + losses;
+       
+        
+        
     }
     //display losses on screen && guesses remaining countdown
-    document.getElementById("currentword").innerHTML = "  " + blanckscorrect.join(" ");
-    document.getElementById("guesscpt").innerHTML = " " + guessleft;
+    document.getElementById("currentword").innerHTML = "" + blanckscorrect.join("");
+    document.getElementById("guesscpt").innerHTML = "" + guessleft;
 }
 play()
 
