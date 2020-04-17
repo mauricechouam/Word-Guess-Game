@@ -1,5 +1,5 @@
 body {
-    background-image: url("../image/test2.gif");
+    background-image: url("../image/test4.jpg");
     background-repeat: round;
     width: 100%;
     font-family: 'Segoe UI';
@@ -11,6 +11,8 @@ h2 {
     padding-top: 20px;
     padding-bottom: 30px;
     color: rgb(25, 43, 43);
+    text-shadow:5px 5px 10px #00FF00;
+    
 }
 
 
@@ -18,7 +20,7 @@ img {
     margin: 10px;
 }
 span{
-    border-bottom:solid blueviolet;
+    border-bottom:solid black;
     margin: 10px;
     padding: 10px;
     height: 2px;
@@ -31,11 +33,12 @@ span{
 
 
 .menu {
-    padding: 10px;
+    padding: 5px;
     position: relative;
-    margin: 10px;
-    font-family: 'Segoe UI';
-    font-size: 25px;
+    margin: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    text-shadow:5px 5px 10px #00FF00;
 }
 
 
@@ -46,13 +49,12 @@ span{
 }
 
 .container {
-    background-color:burlywood;
+    background-color:gainsboro;
     margin-top: 40px;
-    margin-left: 20%;
-    margin-right: 20%;
+    margin-left: 32%;
+    margin-right: 32%;
     margin-bottom: 10px;
     text-align: center;
-    
     
     
 }
@@ -69,11 +71,7 @@ span{
     padding: 20px;
 }
 
-h3{
-    color: #399479;
-    font-family: 'Luckiest Guy', cursive;
-    
-}
+
 
 
 

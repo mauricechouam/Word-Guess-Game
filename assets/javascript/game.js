@@ -59,7 +59,7 @@ function song() {
         soft.pause();
         arti.pause();
         cont.play();
-        document.getElementById("image").src = "./assets/images/cont.gif";
+        document.getElementById("image").src = "./assets/image/cont.gif";
     }
     
     else if (randwd=== wordslist[2]) {
@@ -70,7 +70,7 @@ function song() {
         cont.pause();
         padd.pause();
         boot.play();
-        document.getElementById("image").src = "./assets/images/boot.gif";
+        document.getElementById("image").src = "./assets/image/boot.gif";
     }
     
     else if (randwd=== wordslist[3]) {
@@ -81,7 +81,7 @@ function song() {
         cont.pause();
         arti.pause();
         padd.play();
-        document.getElementById("image").src = "./assets/images/padd.gif";
+        document.getElementById("image").src = "./assets/image/padd.gif";
     }
     
     else if (randwd === wordslist[4]) {
@@ -92,7 +92,7 @@ function song() {
         cont.pause();
         full.pause();
         arti.play();
-        document.getElementById("image").src = "./assets/images/arti.gif";
+        document.getElementById("image").src = "./assets/image/arti.gif";
     }
     
     else if (randwd=== wordslist[5]) {
@@ -103,7 +103,7 @@ function song() {
         arti.pause();
         cont.pause();
         full.play();
-        document.getElementById("image").src = "./assets/images/full.gif";
+        document.getElementById("image").src = "./assets/image/full.gif";
     }
     
     else if (randwd=== wordslist[6]) {
@@ -114,7 +114,7 @@ function song() {
         arti.pause();
         cont.pause();
         soft.play();
-        document.getElementById("image").src = "./assets/images/soft.gif";
+        document.getElementById("image").src = "./assets/image/soft.gif";
     }
 }
 function reset() {// Function reset
@@ -130,6 +130,7 @@ function letterin(lett) { // function to check if the player letter matches rand
         if (randwd[i] == lett) {
             lettrue = true;
         }
+
 
     }
     if (lettrue) {
@@ -151,14 +152,17 @@ function verification() {
     if (lettwd.toString() == blanckscorrect.toString()) {
         wins++;
         song()
-        reset()
         document.getElementById("wincpt").innerHTML = " " + wins; 
-        document.getElementById("message").innerHTML = " !!!! WELL DONE!!!!" 
+        document.getElementById("message").innerHTML = " !!!! WELL DONE !!!!" 
+        document.getElementById("message2").innerHTML = "The answer was : " + lettwd.toString();
+       
+        reset()
     } else if (guessleft === 0) {
         losses++
         reset()
-        document.getElementById("image").src = "./assets/images/try.gif"
+        document.getElementById("image").src = "./assets/image/try.gif"
         document.getElementById("message").innerHTML = " !!!! TRY AGAIN !!!!" 
+        document.getElementById("message2").innerHTML = " !!!!Guess the Next One!!!!" 
         document.getElementById("lostcpt").innerHTML = "" + losses;
        
         
