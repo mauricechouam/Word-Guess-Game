@@ -13,6 +13,7 @@ var guessleft = 12;
 
 // function play
 function play() {
+   
     randwd = wordslist[Math.floor(Math.random() * wordslist.length)];//computer choose a random word from the list
     lettwd = randwd.split("");
     space = lettwd.length;
@@ -37,6 +38,7 @@ var full = document.getElementById("full");
 var padd = document.getElementById("padd");
 var resp = document.getElementById("resp");
 var soft = document.getElementById("soft");
+var begin = document.getElementById("begin")
 
 
 function song() {
@@ -164,8 +166,6 @@ function verification() {
         document.getElementById("message").innerHTML = " !!!! TRY AGAIN !!!!" 
         document.getElementById("message2").innerHTML = " !!!!Guess the Next One!!!!" 
         document.getElementById("lostcpt").innerHTML = "" + losses;
-       
-        
         
     }
     //display losses on screen && guesses remaining countdown
