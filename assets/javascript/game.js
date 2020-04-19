@@ -41,7 +41,7 @@ var soft = document.getElementById("soft");
 var begin = document.getElementById("begin")
 
 
-function song() {
+function song() { // function to play a background soon when the player Guess the Right Word. and to display an image
     if (randwd=== wordslist[0]) {
         boot.pause();
         padd.pause();
@@ -51,6 +51,7 @@ function song() {
         cont.pause();
         resp.play();
         document.getElementById("image").src = "./assets/image/resp.gif";
+ 
     }
     
     else if (randwd=== wordslist[1]) {
@@ -62,6 +63,8 @@ function song() {
         arti.pause();
         cont.play();
         document.getElementById("image").src = "./assets/image/cont.gif";
+      
+
     }
     
     else if (randwd=== wordslist[2]) {
@@ -155,8 +158,9 @@ function verification() {
         wins++;
         song()
         document.getElementById("wincpt").innerHTML = " " + wins; 
-        document.getElementById("message").innerHTML = " !!!! WELL DONE !!!!" 
+        document.getElementById("message").innerHTML = " !!!! WELL DONE !!!!";
         document.getElementById("message2").innerHTML = "The answer was : " + lettwd.toString();
+        document.getElementById("message3").textContent = " !!!!KEEP PLAYING !!!!";
        
         reset()
     } else if (guessleft === 0) {
@@ -165,6 +169,7 @@ function verification() {
         document.getElementById("image").src = "./assets/image/try.gif"
         document.getElementById("message").innerHTML = " !!!! TRY AGAIN !!!!" 
         document.getElementById("message2").innerHTML = " !!!!Guess the Next One!!!!" 
+        document.getElementById("message3").innerHTML = " ...." 
         document.getElementById("lostcpt").innerHTML = "" + losses;
         
     }
